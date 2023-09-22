@@ -8,59 +8,41 @@
 
     <TextView
         android:id="@+id/result"
-        android:layout_width="216dp"
-        android:layout_height="78dp"
-        android:layout_marginBottom="176dp"
+        android:layout_width="344dp"
+        android:layout_height="93dp"
+        android:layout_marginBottom="116dp"
+        android:background="#F3E8E8"
         android:gravity="center"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/url1"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="121dp"
-        android:layout_marginEnd="35dp"
-        android:layout_marginBottom="57dp"
-        android:ems="10"
-        android:gravity="center"
-        android:hint="image1 url"
-        android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/url2"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/url2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="37dp"
-        android:layout_marginEnd="37dp"
-        android:layout_marginBottom="54dp"
-        android:ems="10"
-        android:gravity="center"
-        android:hint="image2 url"
-        android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/check"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/url1" />
+        app:layout_constraintTop_toBottomOf="@+id/check"
+        app:layout_constraintVertical_bias="0.548" />
 
     <Button
         android:id="@+id/check"
         android:layout_width="220dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="319dp"
+        android:layout_marginTop="56dp"
         android:gravity="center"
         android:text="check"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/url2" />
+        app:layout_constraintTop_toBottomOf="@+id/image" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="280dp"
+        android:layout_height="205dp"
+        android:layout_marginTop="100dp"
+        android:background="#EADCDC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
